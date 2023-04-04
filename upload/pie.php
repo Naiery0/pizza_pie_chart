@@ -53,6 +53,7 @@ if ($result->num_rows > 0) {
                   var chart = new google.visualization.PieChart(document.getElementById("piechart"));
                   chart.draw(data, options);
                   
+                  //차트 페이지 새로고침
                   setInterval(function() {
                     location.reload();
                   }, 10000);
