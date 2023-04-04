@@ -52,6 +52,10 @@ if ($result->num_rows > 0) {
 
                   var chart = new google.visualization.PieChart(document.getElementById("piechart"));
                   chart.draw(data, options);
+                  
+                  setInterval(function() {
+                    location.reload();
+                  }, 10000);
                 }
               </script>
             </head>
